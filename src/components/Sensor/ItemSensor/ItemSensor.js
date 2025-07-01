@@ -37,21 +37,24 @@ export function ItemSensor(props) {
 
   return (
     <div className="cardSensor">
-      <h1>Calidad del Aire</h1>
+      <h2>Calidad del Aire</h2>
       {dato ? (
-        <div className="cardSensor__cardItems">
+        <div className="cardSensor__item">
           <div>
             <GaugeContainer
               width={500}
               height={200}
               startAngle={-110}
               endAngle={110}
-              value={30}
+              value={dato.pm1_0}
+              valueMin={0}
+              valueMax={70}
             >
               <GaugeReferenceArc />
               <GaugeValueArc />
               <GaugePointer />
             </GaugeContainer>
+
             <p>PM 1 : {dato.pm1_0}</p>
           </div>
           <div>
@@ -60,7 +63,9 @@ export function ItemSensor(props) {
               height={200}
               startAngle={-110}
               endAngle={110}
-              value={30}
+              value={dato.pm2_5}
+              valueMin={0}
+              valueMax={75}
             >
               <GaugeReferenceArc />
               <GaugeValueArc />
@@ -75,7 +80,9 @@ export function ItemSensor(props) {
               height={200}
               startAngle={-110}
               endAngle={110}
-              value={30}
+              value={dato.pm10}
+              valueMin={0}
+              valueMax={150}
             >
               <GaugeReferenceArc />
               <GaugeValueArc />
