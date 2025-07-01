@@ -1,40 +1,46 @@
 .cardSensor {
+  padding: 0 0px 0px 0;
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  text-transform: uppercase;
-  justify-content: space-between;
-  background-color: rgba(7, 49, 233, 0.5);
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  background: #1976d2;
   > h2 {
     font-size: 30px;
+    color: rgb(132, 5, 5);
     font-weight: bold;
+    text-transform: uppercase;
   }
   &__item {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
     align-items: center;
+    justify-content: center;
     align-content: center;
-    justify-content: space-between;
-    gap: 20px;
-
-    > div {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 0px 10px 0px;
+    &__cardg {
       display: flex;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 40px;
-      border: 3px solid #fff;
+      align-content: center;
+      justify-content: center;
+      width: 350px;
+      background: #fff;
+      border-radius: 40px;
+      border-bottom: 20px;
+
       &:hover{
-        opacity: 0.4;
+        background-color: rgb(193, 206, 228);
+        transition: transform 0.3s ease;
       }
 
-      >p{
-        font-size: 20px;
+      > p {
+        font-size: 15px;
         font-weight: bold;
-        color: white;
-        opacity: 0.5;
+          color: rgb(226, 9, 9);
       }
     }
   }

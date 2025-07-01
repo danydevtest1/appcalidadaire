@@ -40,57 +40,60 @@ export function ItemSensor(props) {
       <h2>Calidad del Aire</h2>
       {dato ? (
         <div className="cardSensor__item">
-          <div>
-            <GaugeContainer
-              width={500}
-              height={200}
-              startAngle={-110}
-              endAngle={110}
-              value={dato.pm1_0}
-              valueMin={0}
-              valueMax={70}
-            >
-              <GaugeReferenceArc />
-              <GaugeValueArc />
-              <GaugePointer />
-            </GaugeContainer>
-
+          <div className="cardSensor__item__cardg">
+              <GaugeContainer
+                width={500}
+                height={200}
+                startAngle={-110}
+                endAngle={110}
+                value={dato.pm1_0}
+                valueMin={0}
+                valueMax={70}
+              >
+                <GaugeReferenceArc />
+                <GaugeValueArc />
+                <GaugePointer />
+              </GaugeContainer>
+           
             <p>PM 1 : {dato.pm1_0}</p>
           </div>
-          <div>
-            <GaugeContainer
-              width={500}
-              height={200}
-              startAngle={-110}
-              endAngle={110}
-              value={dato.pm2_5}
-              valueMin={0}
-              valueMax={75}
-            >
-              <GaugeReferenceArc />
-              <GaugeValueArc />
-              <GaugePointer />
-            </GaugeContainer>
-
+          <div className="cardSensor__item__cardg">
+              <GaugeContainer
+                width={500}
+                height={200}
+                startAngle={-110}
+                endAngle={110}
+                value={dato.pm2_5}
+                valueMin={0}
+                valueMax={75}
+              >
+                <GaugeReferenceArc />
+                <GaugeValueArc />
+                <GaugePointer />
+              </GaugeContainer>
+            
             <p>PM 2 : {dato.pm2_5}</p>
           </div>
-          <div>
-            <GaugeContainer
-              width={500}
-              height={200}
-              startAngle={-110}
-              endAngle={110}
-              value={dato.pm10}
-              valueMin={0}
-              valueMax={150}
-            >
-              <GaugeReferenceArc />
-              <GaugeValueArc />
-              <GaugePointer />
-            </GaugeContainer>
+          <div className="cardSensor__item__cardg">
+         
+              <GaugeContainer
+                width={500}
+                height={200}
+                startAngle={-110}
+                endAngle={110}
+                value={dato.pm10}
+                valueMin={0}
+                valueMax={150}
+              >
+                <GaugeReferenceArc />
+                <GaugeValueArc />
+                <GaugePointer />
+              </GaugeContainer>
+           
             <p>PM 10: {dato.pm10}</p>
+            </div>
           </div>
-        </div>
+        
       ) : (
         <p>No hay informacion en la base de datos</p>
       )}
