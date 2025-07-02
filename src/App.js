@@ -3,7 +3,7 @@ import { ListSensor } from "./components/Sensor";
 
 function App() {
   return (
-    <div className="App">
+    <div>
   <ListSensor/>
     </div>
   );

@@ -1,5 +1,4 @@
 .cardSensor {
-  padding: 0 0px 0px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,18 +19,19 @@
     align-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0px 0px 10px 0px;
+    padding: 10px;
+   
     &__cardg {
       display: flex;
       align-items: center;
       flex-direction: column;
       align-content: center;
       justify-content: center;
-      width: 350px;
+      width: 320px;
       background: #fff;
       border-radius: 40px;
       border-bottom: 20px;
-
+       border: 5px solid #7d040e;
       &:hover{
         background-color: rgb(193, 206, 228);
         transition: transform 0.3s ease;
@@ -42,6 +42,11 @@
         font-weight: bold;
           color: rgb(226, 9, 9);
       }
+   
     }
   }
+}
+
+.css-b9rdri-MuiGauge-referenceArc {
+    fill: #2582df;
 }
