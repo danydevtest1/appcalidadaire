@@ -1,9 +1,10 @@
 import { ListSensor } from "./components/Sensor";
 
+import './App.scss';
 
 function App() {
   return (
-    <div>
+    <div className="container">
   <ListSensor/>
     </div>
   );

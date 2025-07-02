@@ -1,52 +1,50 @@
 .cardSensor {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  background: #1976d2;
-  > h2 {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+ text-align: center;
+>h2{
     font-size: 30px;
-    color: rgb(132, 5, 5);
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  &__item {
-    display: flex;
+}
+
+ &__item{
+ display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
-   
-    &__cardg {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      width: 320px;
-      background: #fff;
-      border-radius: 40px;
-      border-bottom: 20px;
-       border: 5px solid #7d040e;
-      &:hover{
-        background-color: rgb(193, 206, 228);
-        transition: transform 0.3s ease;
-      }
+    &__cardg{
+    
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+       border-radius: 10px;
+       border: 1px solid #ffffff80;
+       backdrop-filter: blur(5px);
+        &__gau{
+         border-radius: 15px;
+         backdrop-filter: blur(10px);
+         border: 1px solid red;
+         margin-bottom: 10px;
+         background: #dae0edfc;
+        }
 
-      > p {
-        font-size: 15px;
-        font-weight: bold;
-          color: rgb(226, 9, 9);
-      }
-   
+        >p{
+           color:white;
+           font-size: 15px;
+           font-weight: bold;
+        }
+          
     }
-  }
+ }
 }
 
-.css-b9rdri-MuiGauge-referenceArc {
-    fill: #2582df;
-}

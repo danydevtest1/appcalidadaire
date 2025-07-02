@@ -41,8 +41,9 @@ export function ItemSensor(props) {
       {dato ? (
         <div className="cardSensor__item">
           <div className="cardSensor__item__cardg">
+            <div className="cardSensor__item__cardg__gau">
               <GaugeContainer
-                width={500}
+                width={300}
                 height={200}
                 startAngle={-110}
                 endAngle={110}
@@ -54,12 +55,13 @@ export function ItemSensor(props) {
                 <GaugeValueArc />
                 <GaugePointer />
               </GaugeContainer>
-           
+           </div>
             <p>PM 1 : {dato.pm1_0}</p>
           </div>
           <div className="cardSensor__item__cardg">
+            <div className="cardSensor__item__cardg__gau">
               <GaugeContainer
-                width={500}
+                width={300}
                 height={200}
                 startAngle={-110}
                 endAngle={110}
@@ -71,13 +73,13 @@ export function ItemSensor(props) {
                 <GaugeValueArc />
                 <GaugePointer />
               </GaugeContainer>
-            
+            </div>
             <p>PM 2 : {dato.pm2_5}</p>
           </div>
           <div className="cardSensor__item__cardg">
-         
+         <div className="cardSensor__item__cardg__gau">
               <GaugeContainer
-                width={500}
+                width={300}
                 height={200}
                 startAngle={-110}
                 endAngle={110}
@@ -89,7 +91,7 @@ export function ItemSensor(props) {
                 <GaugeValueArc />
                 <GaugePointer />
               </GaugeContainer>
-           
+           </div>
             <p>PM 10: {dato.pm10}</p>
             </div>
           </div>
